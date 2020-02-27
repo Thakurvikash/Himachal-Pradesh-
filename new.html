@@ -1,5 +1,8 @@
 <html>
     <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     html,
 body {
@@ -15,21 +18,21 @@ div.header {
   left: 0;
   overflow:-moz-hidden-unscrollable;
   display:block;
-  width: 500%;
+  width: 100%;
   height:4em;
   background: #2d2d2d;
   box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 div.header ul.nav {
-  overflow:auto;
+  overflow:visible;
 }
 div.header ul.nav li {
   float:left;
-  margin:0 50px;
+  margin:0 20px;
 }
 div.header ul.nav li:first-child {
-  margin-left:125px;
+  margin-left:75px;
 }
 div.header ul.nav li a {
   display:block;
@@ -49,7 +52,7 @@ div.header ul.nav li a {
   overflow: hidden;
   margin:0 auto;
   width:100%;
-  height:110%;
+  height:100%;
   perspective: 700px;
   perspective-origin: 50% 10%;
   backface-visibility:  hidden;
@@ -140,7 +143,7 @@ body.view-bottom-shelf .roll-camera .move-camera {
   width: 200%;
   height: 2000px;
   margin-left:-50%;
-  background-image: linear-gradient(-40deg, #769a31 10%, #526b22 25%);
+  background-image: linear-gradient(-40deg, #769a31 10%, #d2d6ca 25%);
 }
 .wallpaper:before {
   content:"";
@@ -158,13 +161,13 @@ body.view-bottom-shelf .roll-camera .move-camera {
   transform: rotateY(90deg) rotateX(90deg) translateX(199px);
 }
 .shelf.top {
-  top: 350px;
+  top: 190px;
 }
 .shelf.middle {
-  top: 550px;
+  top: 390px;
 }
 .shelf.bottom {
-  top: 750px;
+  top: 590px;
 }
 .shelf .face {
   position: absolute;
@@ -322,6 +325,7 @@ body.view-bottom-shelf .roll-camera .move-camera {
 <body>
 <div class="header">
     <ul class="nav">
+      <li><a href="final one.html" id="view-top-shelf"><i class="fa fa-home">Home</i></a></li>
       <li><a href="Mandi.html" id="view-top-shelf">Mandi</a></li>
       <li><a href="shimla.html" id="view-middle-shelf">Shimla</a></li>
       <li><a href="Manali.html" id="view-bottom-shelf">Manali</a></li>
@@ -343,13 +347,13 @@ body.view-bottom-shelf .roll-camera .move-camera {
             <div class="face top"></div>
             <div class="face front">
 
-              <a href="images\photocard 1.jpg" data-img-url="../photos/1.jpg" class="photocard">
+              <a href="Mandi.html" data-img-url="../photos/1.jpg" class="photocard">
                 <img src="images\photocard 1.jpg" alt="">
               </a>
-              <a href="#" class="photocard">
+              <a href="shimla.html" class="photocard">
                 <img src=" images\photocard 2.jpg" alt="">
               </a>
-              <a href="#" class="photocard">
+              <a href="Manali.html" class="photocard">
                 <img src="images\photocard 3.jpg" alt="">
               </a>
 
@@ -365,13 +369,13 @@ body.view-bottom-shelf .roll-camera .move-camera {
             <div class="face top"></div>
             <div class="face front">
 
-              <a href="#" data-img-url="../photos/1.jpg" class="photocard">
+              <a href="Kasol.html" data-img-url="../photos/1.jpg" class="photocard">
                 <img src="images\photocard 4.jpg" alt="">
               </a>
-              <a href="#" class="photocard">
+              <a href="Solan.html" class="photocard">
                 <img src="images\photocard 5.jpg" alt="">
               </a>
-              <a href="#" class="photocard">
+              <a href="Chamba.html" class="photocard">
                 <img src="images\photocard 6.jpg" alt="">
               </a>
 
@@ -387,14 +391,14 @@ body.view-bottom-shelf .roll-camera .move-camera {
             <div class="face top"></div>
             <div class="face front">
 
-              <a href="#" data-img-url="../photos/1.jpg" class="photocard">
+              <a href="Hamirpur.html" data-img-url="../photos/1.jpg" class="photocard">
                 <img src="images\photocard 7.jpg" alt="">
                 
               </a>
-              <a href="#" class="photocard">
+              <a href="kangra.html" class="photocard">
                 <img src="images\photocard 8.jpg" alt="">
               </a>
-              <a href="#" class="photocard">
+              <a href="bilaspur.html" class="photocard">
                 <img src="images\photocard 9.jpg" alt="">
               </a>
 
@@ -404,9 +408,12 @@ body.view-bottom-shelf .roll-camera .move-camera {
             <div class="face bottom"></div>
           </div>
           <!-- /shelf -->
+          
         </div>
         <!-- /camera -->
       </div>
+     
   </div>
+  
 </body>
 </html>

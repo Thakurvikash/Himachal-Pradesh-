@@ -1,8 +1,91 @@
 <html>
 <head>
+	<!-- Dynamic -->
+	<div class="waveWrapper waveAnimation">
+		<div class="waveWrapperInner bgTop">
+		  <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+		</div>
+		<div class="waveWrapperInner bgMiddle">
+		  <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+		</div>
+		<div class="waveWrapperInner bgBottom">
+		  <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+		</div>
+	  </div>
 			<title>Vikash Thakur's Project On Himachal Pradesh</title>
 	<style>
-	body{background-image:url("background.jpg");faded}
+	@keyframes move_wave {
+		0% {
+			transform: translateX(0) translateZ(0) scaleY(1)
+		}
+		2% {
+			transform: translateX(-25%) translateZ(0) scaleY(0.55)
+		}
+		5% {
+			transform: translateX(-100%) translateZ(0) scaleY(1)
+		}
+	}
+	.waveWrapper {
+		overflow: hidden;
+		position: relative;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		margin: auto;
+	}
+	.waveWrapperInner {
+		position:relative;
+		width: 100%;
+		overflow:hidden;
+		height: 5%;
+		bottom: -1px;
+		background-image: linear-gradient(to top, #3a8637 20%, #27273c 80%);
+	}
+	.bgTop {
+		z-index: 15;
+		opacity: 0.5;
+	}
+	.bgMiddle {
+		z-index: 10;
+		opacity: 0.75;
+	}
+	.bgBottom {
+		z-index: 5;
+	}
+	.wave {
+		position: relative;
+		left: 0;
+		width: 100%;
+		height: 10%;
+		background-repeat: repeat no-repeat;
+		background-position: 0 bottom;
+		transform-origin: center bottom;
+	}
+	.waveTop {
+		background-size: 50% 100px;
+	}
+	.waveAnimation .waveTop {
+	  animation: move-wave 3s;
+	   -webkit-animation: move-wave 1s;
+	   -webkit-animation-delay: 0.5s;
+	   animation-delay: 1s;
+	}
+	.waveMiddle {
+		background-size: 50% 120px;
+	}
+	.waveAnimation .waveMiddle {
+		animation: move_wave 10s linear infinite;
+	}
+	.waveBottom {
+		background-size: 50% 100px;
+	}
+	.waveAnimation .waveBottom {
+		animation: move_wave 15s linear infinite;
+	}
+	/* body{background-image:url("background.jpg");faded} */
+body{	background-image: linear-gradient(-40deg, #769a31 10%, #d2d6ca 25%);
+}
 	p{ font-family:arial;
 	font-size:20px;}
 	.header{background-color:green;position:relative;font-family:arial;font-size:30px;padding:30px;text-align:center;margin:10px;}
@@ -10,7 +93,7 @@
 	div.gallery {margin: 25px;border: 2px solid black;float: left;width:auto;}
 	div.gallery:hover {border: 1px solid #777;}
 	.tradition{background-color:green;color:white;text-align:center;}
-	.paragraph{background-color:white;margin:10px;padding:30px;width:auto;height:auto;}
+	.paragraph{background-image: linear-gradient(-40deg, #769a31 10%, #d2d6ca 25%);margin:10px;padding:30px;width:auto;height:auto;}
 	button{background-color:green;padding:10px;width:auto;margin:10px;}
 
 	.footer{background-color:#333;color:white;font-family:times new romen;margin:10px;padding:30px;width:auto;}
@@ -32,7 +115,9 @@
 	
 </style>
 </head>
+
 <body>
+	
 	<div id="homme">
 </div>
 <div class="header">
@@ -48,8 +133,14 @@
 <li><a href="#beautyy">Beauty</a></li>
 <li style="float:right;"><a href="#about">About</a></li>
 <li class"right"><a href="#dev">Dev Bhoomi</a></li>
-<li><a href="#tourism">Tourism</a></li>
-<li><a href="new.html">Befalls</a></li>
+<li><a href="#tourism">Tourisms</a></li>
+<li><a href="new.html" target="_blank">Befalls</a></li>
+<li style="float:left;">
+<form style="float: left;;background-color: green;padding-top: 8px;margin:8px;position: relative;" method="get" action="http://www.google.com/search">
+	<input type="text"   name="q" size="31"	maxlength="155" value="Search for places" />
+	<input type="submit" value="Search" />
+</form>
+	</li>
 </ul>
 <div class="paragraph">
 <div class="gallery">
@@ -341,12 +432,12 @@ Nearby famous place: Dharamshala
 
 
 <div class="footer"id="about">
-<center><h1 style="text-decoration:underline;">About</h1></center>
-<h2>Name: </h2><h3 class="aboutright"><a href="https://www.instagram.com/vikash_thakur1999/"><button>Vikash, Shivam, Amandeep</button></a></h3><br><br>
-<h2>Roll No: </h2><h3 class="aboutright">17/fca/bca/109</h3><br><br>
+<center><h1 style="text-decoration:underline;">About</h1></center><br>
+<h2>Name: </h2><h3 class="aboutright"><a href="https://www.instagram.com/vikash_thakur1999/"  target="_blank"><button>Vikash, Shivam, Amandeep</button></a></h3><br><br>
+<h2>Roll No: </h2><h3 class="aboutright">17/FCA/BCA--109,092,058</h3><br><br>
 <h2>Course: </h2><h3 class="aboutright">BCA</h3><br><br>
 <h2>Department: </h2><h3 class="aboutright">FCA</h3><br><br>
-<h2>Insitute: </h2><h3 class="aboutright"><a href="http://manavrachna.edu.in/international-institute-of-research-and-studies/"><button>Manav Rachna International Insitute of Researchs and Studies</button></a></h3><br><br>
+<h2>Insitute: </h2><h3 class="aboutright"><a href="http://manavrachna.edu.in/international-institute-of-research-and-studies/" target="_blank"><button>Manav Rachna International Insitute of Researchs and Studies</button></a></h3><br><br>
 <br>
 <BR><a href="#h1"><button>Back to Home</button></a><br>
 </div>
